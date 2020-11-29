@@ -12,6 +12,8 @@ Furthermore, it has all of the following properties:
 7) practical to compute: compute times between all pairs of points in common meshes take at most a few minutes;
 8) parameter-free: independent of any parameter that must be set differently for specific meshes or applications
 
+The biharmonic distance between points can be computed using the eigenvectors and eigenvalues of the Laplace-Beltrami operator:
+![](images/eq.jpg)
 
 The biharmonic distance between all pairs of vertices can easily be calculated as follows:
  
