@@ -15,12 +15,11 @@ int main(int argc, char *argv[])
   igl::opengl::glfw::Viewer viewer;
 
   std::cout<<R"(
-  B,b        Show Biharmonic Distance (10 summands)
+  B,b        Show Biharmonic Distance (8 summands)
   G,g        Show Geodesic Distance
-  Z,z        Show Biharmonic Distance (2 summands)
-  X,x        Show Biharmonic Distance (4 summands)
-  C,c        Show Biharmonic Distance (6 summands)
-  V,v        Show Biharmonic Distance (8 summands)
+  X,x        Show Biharmonic Distance (2 summands)
+  C,c        Show Biharmonic Distance (4 summands)
+  V,v        Show Biharmonic Distance (6 summands)
 )";
   // Load a mesh in OFF format
   igl::read_triangle_mesh(argc>1 ? argv[1] : "../data/bunny.off", V, F);
