@@ -7,7 +7,8 @@ void biharmonic_distance(
   const Eigen::MatrixXi & F,
   const int K,
   Eigen::MatrixXd &D)
-{
+{   
+    D.setZero();
     Eigen::MatrixXd S;
     biharmonic_summands(V, F, K, S);
     D.resize(V.rows(), V.rows());
