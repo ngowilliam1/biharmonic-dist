@@ -1,7 +1,6 @@
 #include "biharmonic_distance.h"
-#include "biharmonic_summands.h"
-#include <iostream>
-using namespace std;
+#include "biharmonic_eigens.h"
+
 void biharmonic_distance(
   const Eigen::MatrixXd & V,
   const Eigen::MatrixXi & F,
@@ -9,18 +8,19 @@ void biharmonic_distance(
   Eigen::MatrixXd &D)
 {   
     D.setZero();
-    Eigen::MatrixXd S;
-    biharmonic_summands(V, F, K, S);
+    Eigen::MatrixXd desiredEigenVectors;
+    Eigen::RowVectorXd desiredEigenValues;
+    biharmonic_eigens(V, F, K, desiredEigenVectors, desiredEigenValues);
     D.resize(V.rows(), V.rows());
     
     for (int i = 0; i < V.rows(); i++){
-        for (int j = i; j < V.rows(); j++){
-            D(i, j) = sqrt((S.row(i)-S.row(j)).array().pow(2.0).sum());
+        for (int j = (i+1); j < V.rows(); j++){
+            Eigen::RowVectorXd numerator = desiredEigenVectors.row(i) - desiredEigenVectors.row(j);
+            D(i, j) = sqrt((numerator.array().rowwise()/desiredEigenValues.array()).pow(2.0).sum());
         }
     }
     // Converts upper triangular matrix into symmetric matrix extracted from the upper part of D
     D = Eigen::MatrixXd(D.selfadjointView<Eigen::Upper>());
-    
 }
 
 // If K is not set, set K to 8

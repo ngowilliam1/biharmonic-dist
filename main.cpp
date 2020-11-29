@@ -5,7 +5,7 @@
 #include <igl/isolines_map.h>
 #include <iostream>
 #include "biharmonic_distance.h"
-#include<igl/read_triangle_mesh.h>
+#include <igl/read_triangle_mesh.h>
 
 // Code Taken from https://github.com/libigl/libigl/blob/master/tutorial/206_GeodesicDistance/main.cpp to load geodesic distance for the viewer
 int main(int argc, char *argv[])
