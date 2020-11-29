@@ -9,7 +9,7 @@ Clone recursively this repository
     git clone --recursive https://github.com/ngowilliam1/biharmonic-dist.git
 
 
-## Build & Execution
+## Build & Execute
 
 This follows the cmake/make build routine. Starting in this directory, issue:
 
