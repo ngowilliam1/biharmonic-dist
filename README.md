@@ -25,3 +25,4 @@ or to load alternative meshes (in .off format):
 
     ./smoothing [path to mesh]
 
+![](images/bunny-mesh.jpg)
