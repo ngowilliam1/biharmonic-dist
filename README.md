@@ -25,6 +25,6 @@ on a given mesh
 
 or to load alternative meshes (in .off format):
 
-    ./smoothing [path to mesh]
+    ./biharmonic [path to mesh]
 
 ![](images/bunny-mesh.jpg)
