@@ -3,7 +3,7 @@
 The biharmonic distance between two points (x,y) is a distance measure based on the biharmonic differential operator.
 It provides a good trade-off between nearly geodesic distances for small distances and global shape-awareness for large distances.
 Furthermore, it has all of the following properties:
-1) metric: non-negative, sat- isfies the identity of indiscernibles, symmetric, and satisfies the tri- angle inequality; 
+1) metric: non-negative, satisfies the identity of indiscernibles, symmetric, and satisfies the triangle inequality; 
 2) gradual: smooth with respect to perturbations of x and y, with no singularities except derivative discontinuity at x; 
 3) locally isotropic: approximately geodesic when y is near x;
 4) globally “shape-aware:” reflects the overall shape of the surface when y is far from x;
