@@ -22,3 +22,12 @@ void biharmonic_distance(
     D = Eigen::MatrixXd(D.selfadjointView<Eigen::Upper>());
     
 }
+
+// If K is not set, set K to 8
+void biharmonic_distance(
+  const Eigen::MatrixXd & V,
+  const Eigen::MatrixXi & F,
+  Eigen::MatrixXd &D)
+{
+    biharmonic_distance(V, F, 8, D);
+}

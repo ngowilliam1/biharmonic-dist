@@ -20,5 +20,12 @@ void biharmonic_distance(
   const int K,
   Eigen::MatrixXd &D);
 
+// If K is not set, set K to 8
+void biharmonic_distance(
+  const Eigen::MatrixXd & V,
+  const Eigen::MatrixXi & F,
+  Eigen::MatrixXd &D);
+
+
 
 #endif
