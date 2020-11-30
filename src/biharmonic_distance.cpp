@@ -13,7 +13,7 @@ void biharmonic_distance(
     Eigen::RowVectorXd desiredEigenValues;
     biharmonic_eigens(V, F, K, desiredEigenVectors, desiredEigenValues);
     
-    
+    // Creates an upper-triangular matrix containing the biharmonic distance between vertex i and j
     for (int i = 0; i < V.rows(); i++){
         for (int j = (i+1); j < V.rows(); j++){
             Eigen::RowVectorXd numerator = desiredEigenVectors.row(i) - desiredEigenVectors.row(j);
