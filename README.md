@@ -28,3 +28,8 @@ or to load alternative meshes (in .off format):
     ./biharmonic [path to mesh]
 
 ![](images/bunny-mesh.jpg)
+
+## Notes
+
+The meshes available in the data/ folder are taken from: [geometry-processing-introduction](https://github.com/alecjacobson/geometry-processing-introduction/tree/master/data) and 
+[geometry-processing-deformation](https://github.com/alecjacobson/geometry-processing-deformation/tree/master/data).
