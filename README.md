@@ -1,6 +1,6 @@
 # Biharmonic Distance
 The biharmonic distance between two points (x,y) is a distance measure based on the biharmonic differential operator.
-For more information view [entry](https://github.com/ngowilliam1/biharmonic-dist/blob/main/entry.md) and
+For more information view the [entry](https://github.com/ngowilliam1/biharmonic-dist/blob/main/entry.md) and [demo video](https://www.youtube.com/watch?v=aT__mkcE3UI)
 [paper](https://www.cs.princeton.edu/~funk/biharmonic.pdf).
 
 ## Getting Started
